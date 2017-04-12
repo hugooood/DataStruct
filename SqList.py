@@ -1,8 +1,9 @@
 #!/usr/bin/pyhton3
 #-*- coding:utf-8 -*-
 # DataStruct: Sequence list 
-# 链表的顺序存储
+# 线性表的顺序存储
 # Author:hugo
+# email:hugooood@outlook.com
 # Time:2017/4/12
 
 MAXSIZE = 20
