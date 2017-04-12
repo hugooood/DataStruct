@@ -1,3 +1,11 @@
+#!/usr/bin/pyhton3
+#-*- coding:utf-8 -*-
+# DataStruct: Sequence list 
+# 实现栈的基本功能
+# Author:hugo
+# email:hugooood@outlook.com
+# Time:2017/4/12
+
 class Stack:
 	def __init__(self):
 		self.items = []
