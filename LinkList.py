@@ -1,10 +1,12 @@
 #!/usr/bin/pyhton3
 #-*- coding:utf-8 -*-
 # DataStruct: Linklist 
-# 线性表的顺序存储
+# 线性表的链式存储
 # Author:hugo
 # email:hugooood@outlook.com
 # Time:2017/4/13
+
+import random
 
 class Node(object):
 	def __init__(self,value,point=0):
@@ -50,6 +52,18 @@ class LinkList(object):
 			return True
 		else:
 			return False
+
+	#单链表的整表创建
+	def createlist(self,count):
+		self.head = Node(int(random.random()*100))
+		point = self.head
+		i = 1
+		while i < count:
+			node = Node(int(random.random()*100))
+			point.next = node
+			point = point.next
+			i+=1
+		return 
 
 
 	def initlist(self,value):
@@ -97,7 +111,9 @@ class LinkList(object):
 			# print("self.head:",self.head.value)
 			self.head = Node(data,self.head)
 			# print("self.head:",self.head.value)
+			return 
 		
+		#插入其他地方
 		j = 0
 		point = self.head
 		node = self.head
@@ -120,7 +136,7 @@ class LinkList(object):
 			self.head = self.head.next
 			return '---Delete Sucessful---'
 
-		j = 0
+		j = 1
 		point = self.head
 		while j < index:
 			point = point.next
@@ -143,22 +159,26 @@ class LinkList(object):
 			return '---Replace Sucessful---'
 
 	def show(self):
+
 		point = self.head
 		while point.value != 0:
 			if point.next != 0:
-				print(point.value)
+				print (point.value,end=",")
 				point = point.next
 			elif point.next == 0:
-				print(point.value)	
+				print (point.value,end=",")
 				return '---------Show---------'
 		return 
 
 if __name__ == "__main__":
 	l = LinkList()
+	#l.createlist(4)
+	#print(l.show())
 	l.initlist([6,2,3,4])
-	print(l.insert(2,5))
 	print(l.show())
-	print(l.delete(3))
+	l.insert(0,5)
 	print(l.show())
-	print(l.replace(1,12))
-	print(l.show())	
+	l.delete(3)
+	print(l.show())
+	# print(l.replace(1,12))
+	# print(l.show())	
