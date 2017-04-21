@@ -4,8 +4,8 @@
 # 线性表的链式存储
 # Author:hugo
 # email:hugooood@outlook.com
-# Time:2017/4/13
-
+# Create Time:2017/4/13
+# Last Modified Time:2017/4/17
 import random
 
 class Node(object):
