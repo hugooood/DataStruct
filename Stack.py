@@ -25,6 +25,9 @@ class Stack:
 	def size(self):
 		return len(self.items)
 
+	def show(self):
+		return self.items
+
 if __name__ == "__main__":
 	s = Stack()
 	print("isEmpty:",s.isEmpty())
