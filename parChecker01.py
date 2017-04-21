@@ -1,5 +1,3 @@
-#!/usr/bin/pyhton3
-#-*- coding:utf-8 -*-
 # DataStruct: Stack 
 # 栈的应用:括号匹配
 #

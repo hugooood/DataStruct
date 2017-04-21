@@ -1,5 +1,3 @@
-#!/usr/bin/pyhton3
-#-*- coding:utf-8 -*-
 # DataStruct: Sequence list 
 # 实现栈的基本功能
 # Author:hugo
