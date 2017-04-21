@@ -6,6 +6,7 @@
 # email:hugooood@outlook.com
 # Time:2017/4/12
 
+
 class Stack:
 	def __init__(self):
 		self.items = []
