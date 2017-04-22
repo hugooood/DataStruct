@@ -16,7 +16,7 @@ def simulation(numSeconds,pagesPerMinute):
 	waitingTimes = [] #记录每个任务的等待时间
 
 	for currentSecond in range(numSeconds):  #0~3600s
-		if newPrintTask():  #创建新任务
+		if newPrintTask():  #创建新任务 
 			task = Task(currentSecond)#当前任务及时间
 			printQueue.enqueue(task)#进入打印队列
 			#print('newPrintTask')
